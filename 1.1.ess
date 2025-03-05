@@ -3,9 +3,13 @@ new age number
 set age 17
 new adult number
 set adult 18
-if (age<adult)
-  log string "Человек не может купить алкоголь, ему нет 18-ти"
-else
-  log string "Да, человек может купить алкоголь, ему есть 18"
-close
+    if (adult>age)
+        log string "Человек не может купить алкоголь, ему нет 18-ти"
+    close
+    if (adult=age)
+        log string "Человек может купить алкоголь, ему есть 18"
+    close
+    if (age>adult)
+        log string "Человек может купить алкоголь, ему есть 18"
+    close
 finish

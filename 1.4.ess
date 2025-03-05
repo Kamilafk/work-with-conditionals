@@ -12,22 +12,22 @@ set x 41
       if (x>a)
       log string "x>a>b>c>d"
       close
-      if (x<a)
+      if (a>x)
          if (x>b)
          log string "a>x>b>c>d"
          close
       close
-      if (x<b)
+      if (b>x)
          if (x>c)
          log string "a>b>x>c>d"
          close
       close
-       if (x<c)
+      if (c>x)
          if (x>d)
          log string "a>b>c>x>d"
          close 
       close
-      if (x<d)
+      if (d>x)
          log string "a>b>c>d>x"
       close 
 finish

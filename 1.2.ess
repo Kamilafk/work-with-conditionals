@@ -1,0 +1,7 @@
+start
+new money number
+set money 500
+log string "У нас есть" >> money >> "рублей."
+new thing number
+set thing 478
+log string "Товар стоит" >> thing >> "рублей."
